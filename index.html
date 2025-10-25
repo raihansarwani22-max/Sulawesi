@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kepulauan Sulawesi — Panduan Singkat</title>
+  <meta name="description" content="Situs kecil tentang Kepulauan Sulawesi: geografi, budaya, wisata, dan galeri." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">
+          <img src="https://petabahasa.kemdikbud.go.id/map/thumbnail4.png" alt="Logo Pulau Sulawesi">
+        </div>
+        <div>
+          <div style="font-weight:700">Kepulauan Sulawesi</div>
+          <div style="font-size:13px;color:var(--muted)">Pulau, Budaya, dan Destinasi</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#tentang">Tentang</a>
+        <a href="#wisata">Wisata</a>
+        <a href="#budaya">Budaya</a>
+        <a href="#galeri">Galeri</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div class="card">
+        <h1>Selamat Datang di Kepulauan Sulawesi</h1>
+        <p class="lead">Sulawesi adalah gugusan pulau besar di tengah Kepulauan Indonesia. Terkenal akan keanekaragaman budaya, bentang alam dramatis, dan titik selam kelas dunia.</p>
+        <div class="stats">
+          <div class="stat"><b>Provinsi Utama</b><small>Kebudayaan Makassar berasal dari Sulawesi Selatan, Toraja juga dari Sulawesi Selatan, dan Minahasa dari Sulawesi Utara. Ketiganya memiliki tradisi unik yang memperkaya Indonesia.</small></div>
+          <div class="stat"><b>Bahasa Daerah</b><small>Masyarakat Makassar menggunakan Bahasa Makassar, Toraja memakai Bahasa Toraja, dan Minahasa berbicara dengan Bahasa Minahasa.</small></div>
+          <div class="stat"><b>Kebudayaan</b><small>Makassar: rumah Balla Lompoa & tarian Pakarena. Toraja: rumah Tongkonan & upacara Rambu Solo’. Minahasa: rumah Wale & festival bunga.</small></div>
+        </div>
+
+        <section id="tentang">
+          <h2>Tentang</h2>
+          <p>Sulawesi terletak di bagian tengah Indonesia dan memiliki bentuk unik menyerupai huruf “K”. Dikelilingi oleh laut, gunung, dan lembah. Makassar, Toraja, dan Minahasa masing-masing menawarkan pesona geografis berbeda.</p>
+        </section>
+
+        <section id="wisata">
+          <h2>Wisata & Aktivitas</h2>
+          <ul>
+            <li>Makassar: Pantai Losari, Benteng Rotterdam, Pulau Samalona.</li>
+            <li>Toraja: Ke’te Kesu’, Londa, Lemo, upacara adat Rambu Solo’.</li>
+            <li>Minahasa: Danau Tondano, Gunung Lokon, dan Taman Laut Bunaken.</li>
+          </ul>
+        </section>
+      </div>
+
+      <aside class="card">
+        <h3>Highlight</h3>
+        <p style="color:var(--muted)">Ringkasan singkat destinasi populer dan tip perjalanan.</p>
+        <div class="highlight-box">
+          <strong>Makassar</strong><div class="muted">(Pantai, diving, kuliner)</div>
+        </div>
+        <div class="highlight-box">
+          <strong>Toraja</strong><div class="muted">(Rumah adat & tradisi)</div>
+        </div>
+        <div class="highlight-box">
+          <strong>Minahasa</strong><div class="muted">(Festival bunga & budaya)</div>
+        </div>
+        <div style="margin-top:14px;text-align:center">
+          <button class="btn" onclick="alert('Selamat jalan!')">Plan Perjalanan</button>
+        </div>
+      </aside>
+    </div>
+
+    <section id="budaya" class="card">
+      <h2>Budaya & Masyarakat</h2>
+      <p class="lead">Sulawesi kaya akan tradisi, tenunan, tarian, dan upacara adat. Setiap daerah memiliki karakter unik yang menarik untuk dipelajari.</p>
+      <div class="grid-3">
+        <div class="card"><h4>Toraja</h4><p>Rumah Tongkonan & upacara adat.</p></div>
+        <div class="card"><h4>Bugis & Makassar</h4><p>Balla Lompoa & tarian Pakarena.</p></div>
+        <div class="card"><h4>Minahasa</h4><p>Festival bunga & rumah Wale.</p></div>
+      </div>
+    </section>
+
+    <section id="galeri" class="card">
+      <h2>Galeri Foto</h2>
+      <div class="gallery">
+        <img src="https://sulselprov.go.id/upload/post/1577086628.jpg" alt="Rumah Adat Toraja" onclick="openLight(event)">
+        <img src="https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/p1/182/2023/11/27/losari-3332630521.jpeg" alt="Pantai Losari" onclick="openLight(event)">
+        <img src="https://cdn.rri.co.id/berita-foto/Manado/o/1723335107448-454742711_2160786174308517_7039308154712187208_n/faxceddtx0b7gde.jpeg" alt="Festival Bunga Minahasa" onclick="openLight(event)">
+      </div>
+    </section>
+
+    <footer>
+      <div class="contact">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=raihansarwani080509@gmail.com" target="_blank">📧 raihansarwani080509@gmail.com</a><br>
+        <a href="https://wa.me/6288245889567" target="_blank">💬 +62 882-4588-9567</a>
+      </div>
+      <p>- Ringkasan singkat tentang Kepulauan Sulawesi -</p>
+    </footer>
+  </div>
+
+  <div id="lightbox" class="lightbox" onclick="closeLight()">
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
